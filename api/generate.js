@@ -22,7 +22,10 @@ export default async function handler(req, res) {
       size: "512x512"
     });
 
-    const description = `A delicious serving of ${food}, perfect for any meal.`;
+    const description = await openai.responses.create({
+      model: "gpt-4.1-mini",
+      input: `Write a short, appetizing description for ${food}`
+    });
 
     res.status(200).json({
       image: image.data[0].url,
