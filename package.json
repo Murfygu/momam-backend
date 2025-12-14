@@ -1,5 +1,5 @@
 {
-  "name": "api-momam",
+  "name": "momam-backend",
   "version": "1.0.0",
   "type": "module",
   "dependencies": {
