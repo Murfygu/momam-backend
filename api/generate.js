@@ -29,7 +29,7 @@ export default async function handler(req, res) {
 
     res.status(200).json({
       image: image.data[0].url,
-      description
+      description: description.output_text
     });
 
   } catch (err) {

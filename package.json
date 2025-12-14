@@ -1,12 +1,6 @@
 {
   "name": "api-momam",
   "version": "1.0.0",
-  "description": "",
-  "scripts": {
-    "start": "node server.js"
-  },
-  "author": "",
-  "license": "ISC",
   "type": "module",
   "dependencies": {
     "openai": "^6.10.0"
